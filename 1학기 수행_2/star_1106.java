@@ -8,9 +8,11 @@ public class star_1106 {
 		int n = sc.nextInt( );
 
 		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= i; j++)
+			for (int j = 1; j <= n; j++)
+				if (j==i)
+					System.out.print( (char)('A'+i-1) );
+				else
 				System.out.print("*");
-				System.out.print( (char)('A'*i-1) );
 		System.out.println( );
 		}
 	}
